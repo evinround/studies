@@ -101,7 +101,20 @@ console.log(x);
  //math object
 
  console.log(Math); //displays methods and properties available for the Math object
- 
+
+let x;
+
+x = Math.sqrt(); //square root
+x = Math.abs(); //absolute value
+x = Math.floor(); //floor
+x = Math.ceil(); //ceil
+x = Math.round(); //round
+x = Math.pow(); //power of (exponent)
+x = Math.min(); //smallest of 2 or more numbers
+x = Math.max(); //largest of 2 or more numbers
+x = Math.random(); //random number between 0 and 1
+x = Math.random() * 10; //random number between 0 and 9
+x = Math.random() * 10 + 1; //random number between 1 and 10
 
 
 
