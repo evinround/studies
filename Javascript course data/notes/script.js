@@ -56,6 +56,33 @@ x = Number(false); //false coerced to number =0
 x = 5 + undefined //= NaN 
 console.log(x, typeof x);
 
+//template literals
+const name = 'John';
+x = `Hello ${name}`;
+
+//properties and methods
+
+const s = 'Hello world'
+
+x = s.length; 
+x = s[0]; //character at index 0
+x = s.__proto__;//will display all available methods for string
+x = s.toUpperCase();//all methods are functions
+x = s.toLowerCase();
+x = s.charAt(0); //char at index
+x = s.indexOf('h'); //index of character, would get back number 0
+x = s.substring(0, 3); //substring from index 0 to index 3, would show letters from one index to another
+x = s.slice(0, 3); //slice from index 0 to index 3, would show letters from one index to another. can start from end with negative numbers.
+x = s.substring(3); //substring from index 3 to end of string
+x = x.trim(); //removes leading and trailing spaces
+x = s.replace('world', 'Hello'); //replaces the first word with the second
+
+
+
+
+console.log(x);
+
+
 
 
 
