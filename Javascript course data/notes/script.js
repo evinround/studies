@@ -82,6 +82,27 @@ x = s.split(''); //splits the string into an array
 
 console.log(x);
 
+//numbers
+let x;
+const num = 5;
+x = num.toString();
+x = num.length; //undefined
+x = num.toString().length; //returns the length of the string
+x = num.toFixed();
+x = num.toPrecision(); //numbers total
+x = num.toExponential();
+x = num.toLocaleString('en-US');
+x = num.valueOf(); //returns the value of the number, primitive type
+
+x = Number.MAX_VALUE; //largest number possible
+x = Number.MIN_VALUE; //smallest number possible
+console.log(x);
+
+ //math object
+
+ console.log(Math); //displays methods and properties available for the Math object
+ 
+
 
 
 
