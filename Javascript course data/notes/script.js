@@ -76,11 +76,13 @@ x = s.slice(0, 3); //slice from index 0 to index 3, would show letters from one 
 x = s.substring(3); //substring from index 3 to end of string
 x = x.trim(); //removes leading and trailing spaces
 x = s.replace('world', 'Hello'); //replaces the first word with the second
-
-
-
+x = s.includes('world'); //checks if the string includes the word, returning boolean
+x = s.valueOf(); //returns the value of the string, primitive type
+x = s.split(''); //splits the string into an array
 
 console.log(x);
+
+
 
 
 
