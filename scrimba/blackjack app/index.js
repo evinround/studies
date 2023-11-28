@@ -28,6 +28,9 @@ function startGame(){
 
 function newCard(){
     console.log("Drawing new card from the deck!");
+    let newCard = Math.floor(Math.random() * 10 + 2);
+    sum = sum + newCard;
+    startGame();
 }
 
 
