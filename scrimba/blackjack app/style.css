@@ -41,7 +41,7 @@ h1 {
     color: rgb(109, 18, 18);
 }
 
-#start-btn {
+button {
     text-decoration: none;
     text-transform: capitalize;
     font-weight: bold;
@@ -56,12 +56,12 @@ h1 {
     border-width: 1px;
 }
 
-#start-btn:hover {
+button:hover {
     background-color: rgb(109, 18, 18);
     color:antiquewhite;
 }
 
-#start-btn:active {
+button:active {
     background-color: #3e8e41;
     box-shadow: 0  6px 3px 0  rgb(2, 66, 11);
     transform: translateY(4px);
