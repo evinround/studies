@@ -116,6 +116,29 @@ x = Math.random(); //random number between 0 and 1
 x = Math.random() * 10; //random number between 0 and 9
 x = Math.random() * 10 + 1; //random number between 1 and 10
 
+//dates and times
+let d;
+
+d = new Date();
+d = d.toString();
+d = new Date(2021, 0, 10)//jan 10, 2021 at 0index
+d = new Date(2021, 0, 10, 10, 10, 10); //jan 10, 2021 at 10:10:10 time
+d = new Date('2021-01-10T10:10'); //jan 10, 2020 at 10:10:10 time
+d = new Date('07/10/2021 12:30:00'); //jan 10, 2021
+d = new Date('07-10-2021'); //jan 10, 2021
+
+d = Date.now();
+d = new Date('07-10-2021 12:30:00'); //jan 10, 2021
+d = d.getTime(); //returns the number of milliseconds
+d = d.value();//returns the number of milliseconds
+d = new Date(); //put in milliseconds it will read as a timestamp
+d = Math.floor(Date.now() / 1000); //returns timestamp in seconds
+
+
+
+
+
+console.log(d);
 
 
 
