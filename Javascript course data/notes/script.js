@@ -133,14 +133,49 @@ d = d.getTime(); //returns the number of milliseconds
 d = d.value();//returns the number of milliseconds
 d = new Date(); //put in milliseconds it will read as a timestamp
 d = Math.floor(Date.now() / 1000); //returns timestamp in seconds
-
-
-
-
-
 console.log(d);
 
 
+//Date Methods & DateTimeFormat API
+
+let x;
+let d = new Date(); //instantiates a new date object in variables
+
+x = d.toString();
+x = d.getTime();
+x = d.valueOf();
+
+x = d.getFullYear();
+x = d.getMonth() + 1; // 0 based on 0 index
+x = d.getDate(); // of month
+x = d.getDay(); // of week
+
+x = d.getHours();
+x = d.getMinutes();
+x = d.getSeconds();
+x = d.getMilliseconds();
+
+x = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+
+x = Intl.DateTimeFormat('en-US').format(d);//local date api
+x = Intl.DateTimeFormat('default').format(d);
+x = Intl.DateTimeFormat('default', { month: 'long'}).format(d);
+x = d.toLocaleString('default', { month: 'short'}); // same as above but shorter
+
+x = d.toLocaleString('default', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    timeZone: 'America/Los_Angeles',
+});
+
+console.log(x);
+
+//
 
 
 
