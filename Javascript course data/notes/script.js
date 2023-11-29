@@ -175,7 +175,22 @@ x = d.toLocaleString('default', {
 
 console.log(x);
 
-//
+//arrays and objects
+let x;
+const numbers = [1, 2, 3, 4, 5, 6];//array literal
+const fruits = new Array('apple', 'banana', 'cherry');//array constructor
+const mixed = [12, 'Hello', true, null];//mixed array
+x =  numbers[0]; //0 index
+x = numbers[0] + numbers[1];
+x = `my favorite fruit is ${fruits[0]}`;
+x = numbers.length;
+fruits[2] = 'pear'; //change array elements
+//fruits.length = 2; //change array length
+fruits[3] = 'grape'; //change array elements
+fruits[fruits.length] = 'blueberry'; //adds blueberry to end of array
+
+console.log(numbers);
+
 
 
 
