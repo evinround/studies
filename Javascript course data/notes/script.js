@@ -191,6 +191,29 @@ fruits[fruits.length] = 'blueberry'; //adds blueberry to end of array
 
 console.log(numbers);
 
+//arr methods
+
+const arr = [34, 54, 65, 31, 14];
+arr.push(100); //adds 100 to the end of the array
+arr.pop(); //removes last element
+arr.unshift(99); //adds 99 to the beginning of the array
+arr.shift(); //removes first element
+arr.reverse(); //reverses the order of the array
+
+let x;
+x = arr.includes(20); //boolean method
+x = arr.indexOf(20); //returns the index of the element, if doesnt exist will return -1
+x = arr.slice(1); //slice from index 1 to end of array
+x = arr.slice(1, 3); //slice from index 1 to index 3
+x = arr.splice(1, 2); //splice from index 1 to index 2, meaning its changing the variable 
+x = arr.splice(3, 1); //splices one item following the item at index 3
+
+x = arr.splice(1, 4).reverse().toString().charAt(0); //you can chain on methods
+
+
+console.log(x);
+console.log(arr); //also shows all methods available for the array
+
 
 
 
