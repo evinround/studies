@@ -214,7 +214,33 @@ x = arr.splice(1, 4).reverse().toString().charAt(0); //you can chain on methods
 console.log(x);
 console.log(arr); //also shows all methods available for the array
 
+//nesting, concat, spread operator
+let x;
+const fruits = ['apple', 'banana', 'cherry'];
+const berries = ['strawberry', 'grape', 'blueberry'];
 
+fruits.push(berries);
+
+x = fruits[3]; //nested array
+x = fruits[3][0]; //first item in nested array
+const allFruits = [fruits, berries];
+x = allFruits; both arrays nested
+x = allFruits[1][2];// first array, second item
+
+x = fruits.concat(berries); //one single array 
+
+//spread operator (...)
+x = [...fruits,...berries];//gives the items in both arrays and combines them like concat
+
+//flatten arrays
+const arr =[1, 2, [3, 4], 5, [6, 7], 8];
+x = arr.flat();//flattens it to a single array
+
+
+
+
+
+console.log(x);
 
 
 
