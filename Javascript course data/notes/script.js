@@ -237,10 +237,19 @@ const arr =[1, 2, [3, 4], 5, [6, 7], 8];
 x = arr.flat();//flattens it to a single array
 
 
+//static methods on array objects
+
+x = Array.isArray(fruits); //returns true or false
+x = Array.from('12345');//turns into an array
+const a = 1;
+const b = 2;
+const c = 3;
+x = Array.of(a, b, c); //turns into an array
+
+//object literals
 
 
 
-console.log(x);
 
 
 
