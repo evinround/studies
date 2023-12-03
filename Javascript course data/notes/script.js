@@ -247,14 +247,79 @@ const c = 3;
 x = Array.of(a, b, c); //turns into an array
 
 //object literals
+let n;
+const person = {
+    name: 'John Doe',
+    age: 34,
+    isAdmin: true,
+    address: {
+        city: 'New York',
+        state: 'NY',
+        country: 'USA'
+    },
+    hobbies: ['coding', 'coding', 'coding'],
+};
+
+n = person.name;
+n = person['age'];
+n = person.address.state;
+n = person.hobbies[0];
+
+person.name = 'Jane Doe';
+person['isAdmin'] = false;
+delete person.age;
+person.hasChildren = true;
+
+person.greet = function () {
+    console.log(`Hello, my name is ${this.name}`);
+}
+
+person.greet();
+n = person;
+console.log(person);
+
+const todo = {};
+todo.id = 1;
+x = todo;
+const todo2 = new Object();
+todo2.id = 2;
+todo2.name = 'buy milk';
+todo2.completed = false;
+
+const person = {
+    address:{
+        coords:{
+            lat: 40.7128,
+            lng: -74.0059
+        }
+    }
+}
+
+x = person.address.coords.lat;
+
+const obj1 = {a: 1, b: 2, c: 3};
+const obj2 = {d: 4, e: 5, f: 6};
+
+const obj3 = {obj1, obj2};
+const obj4 = {...obj1,...obj2};
+const obj5 = Object.assign({}, obj1, obj2);//does same function as obj4
+
+const todos = [
+    {id: 1, name: 'buy milk'},
+    {id: 2, name: 'buy eggs'},
+    {id: 3, name: 'buy bread'},
+];
+
+x = todos[0].name;
+
+x = Object.keys(todo);
+x = Object.keys(todo2).length;//cant use length on objects but can on arrays
+x = Object.values(todo);
+x = Object.entries(todo2);//keyvalue pair array
+x = todo.hasOwnProperty('id'); //boolean
 
 
-
-
-
-
-
-
+//destructuring
 
 
 
