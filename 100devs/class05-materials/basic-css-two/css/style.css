@@ -1,0 +1,23 @@
+a {
+    color: gold;
+    font-size: 20px;
+    background-color: purple;
+}
+
+section {
+    height: 200px;
+    border: solid 10px blue;
+    background-color: orange;
+}
+
+aside {
+    height: 300px;
+    border: solid 1px red;
+    background-color: teal;
+}
+
+aside p {
+    color: white;
+    font-size: 18px;
+    text-decoration: underline red;
+}
