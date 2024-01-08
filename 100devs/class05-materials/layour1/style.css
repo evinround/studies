@@ -20,7 +20,23 @@ section {
 .sect2 > section {
     height: 200px;
     width: 50%;
+}
 
+@media screen and (max-width: 200px) {
+    section {
+        background: blue;
+    }
+}
 
+@media screen and (max-width: 800px) {
+    section {
+        background: blue;
+    }
+}
 
+@media screen and (max-width: 1000px) {
+    section {
+        background: blue;
+    }
+}
 

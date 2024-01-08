@@ -26,3 +26,9 @@ section {
 #sect2 > section+section {
     width: 65%;
 }
+
+@media screen and (max-width: 800px) {
+    section {
+        background: blue;
+    }
+}

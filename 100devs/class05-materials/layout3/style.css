@@ -18,3 +18,9 @@ section {
 #spec1{
     width:45%;
 }
+
+@media screen and (max-width: 800px) {
+    section {
+        background: blue;
+    }
+}
