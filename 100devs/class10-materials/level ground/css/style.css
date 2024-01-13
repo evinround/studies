@@ -22,21 +22,81 @@
 /*******************************************/
 
 body {
-
+  background-color: rgb(103, 103, 147);
+  color:aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  margin: 20px;
+  text-align: center;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+nav *{
+  font-size: 14px;
+  float: left;
+  width: 33.333%;
+  height: 30px;
+  margin-bottom: 80px;
 }
 
-footer {
-
+main h1 {
+  font-size: 50px;
+  text-align: center;
+  float: left;
+  width: 100%;
 }
 
+main a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight:100
+}
+
+main {
+  margin: 0px 20px 100px 20px;
+}
+
+main + section {
+  background-color: aliceblue;
+  color: rgb(103, 103, 147);
+  padding: 100px;
+  float: left;
+}
+
+main + section + section {
+  background-color: rgb(214, 214, 240);
+  color: rgb(103, 103, 147);
+  padding: 100px;
+  float: left;
+}
+main + section + section h3 {
+  color: black;
+}
+
+main + section + section > section {
+  width: 50%;
+  float: left;
+}
+
+main + section + section + section {
+  padding: 100px;
+  float: left;
+  background-color: aliceblue;
+  color: rgb(103, 103, 147);
+}
+
+footer > section{
+  background-color: black;
+  float: left;
+  color: white;
+  width: 50%;
+  height: 200px;
+  text-align: left;
+  padding: 20px;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

@@ -20,12 +20,48 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
-
+*{
+  background-color: rgb(174, 182, 232);
+  padding: 10px;
+  color: rgb(42, 59, 65);
 }
 
+nav *{
+  font-size: 14px;
+  float: left;
+  width: 33.333%;
+  height: 30px;
+  margin-bottom: 80px;
+}
 
+nav h2 + ul{
+  text-decoration: none;
+}
+
+main > section {
+  width: 50%;
+  height: 600px;
+  float: left;
+}
+
+main > section > h1{
+  clear: both;
+}
+
+main + section > section {
+  float: left;
+  width: 25%;
+  height: 300px;
+}
+
+main + section + section {
+  clear: both;
+}
+
+section + section > h2, section + section > h2 + p {
+  background-color: aliceblue;
+  color: rgb(42, 59, 65);
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -33,9 +69,6 @@ header {
 
 }
 
-footer {
-
-}
 
 /******************************************
 /* ADDITIONAL STYLES
