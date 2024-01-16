@@ -22,20 +22,77 @@
 /*******************************************/
 
 body {
-
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  padding: 10px;
+  width: 100%;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+nav{
+  display: flex;
+  justify-content: space-around;
 }
 
-footer {
-
+nav section{
+  display: flex;
+  justify-content: end;
 }
+
+nav ul{
+  display: flex;
+  padding-right: 30px;
+  align-items: baseline;
+}
+
+nav ul li {
+  padding: 5px;
+  list-style: none;
+  padding-right: 10px;
+}
+
+nav img{
+  padding: 10px;
+}
+
+main{
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+main h1{
+  font-size: 40px;
+}
+
+main section {
+  display: flex;
+  padding: 15px 5px 5px 0;
+}
+
+article{
+  margin: 200px;
+}
+
+article h3{
+  color: orange;
+  font-size: 10px;
+  padding-bottom: 0;
+}
+
+article h2 {
+  font-size: 34px;
+}
+
+article p{
+  font-size: 12px;
+}
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
