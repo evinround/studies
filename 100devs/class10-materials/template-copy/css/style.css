@@ -22,21 +22,93 @@
 /*******************************************/
 
 body {
-
+  text-align: left;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px 0 10px;
 }
 
-footer {
-
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  flex-grow: 2;
 }
 
+main, section {
+  margin: 100px;
+  padding: 20px;
+}
+
+main {
+  background-color: black;
+  color: white;
+}
+
+main h1 {
+  font-size: 60px;
+}
+
+main input{
+  margin: 10px;
+}
+
+main > section {
+  margin: 100px, 0, 0, 0;
+}
+
+main + section {
+  display: flex;
+  margin: 0 auto;
+  padding: auto;
+}
+
+main + section + section {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+}
+
+main + section + section h2 {
+  font-size: 40px;
+}
+
+main + section + section + section {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+main + section + section + section + section{
+  background-color: grey;
+  padding: 20px 5px;
+}
+
+main + section + section + section + section  h3{
+  font-size: 30px;
+}
+
+main + section + section + section + section + section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main + section + section + section + section + section > section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
