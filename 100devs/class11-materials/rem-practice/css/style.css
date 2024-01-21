@@ -30,9 +30,20 @@
 /*******************************************/
 
 /* Please make the someText 12px, moreText 16px, and lastText 27px */
-
+.someText {
+  font-size: 12px;
+}
+.moreText {
+  font-size: 16px;
+}
+.lastText {
+  font-size: 27px;
+}
 
 /* Please double the font-size of someText, moreText, and lastText (still using px) */
+.someText {
+  font-size: 
+}
 
 
 /* Please set a base font-size on heyo, and make someText 12px, moreText 16px, and lastText 27px BUT use ems instead of px */

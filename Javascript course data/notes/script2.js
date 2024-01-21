@@ -27,3 +27,4 @@ const [first, second, ...rest] = numbers; //brings out the first and second elem
 
 
 console.log(first, second, rest);
+
