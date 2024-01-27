@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Rubik Glitch', system-ui;
+}
+
+video {
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.513);
+  }
+
+header {
+    z-index: 999;
+    color: rgba(9, 0, 0, 0.713);
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    background: none;
+    padding-top: 4em;
+    font-family: 'Rubik Glitch', system-ui;
+    text-shadow: rgb(199, 215, 227) 1px 0 10px;
+}

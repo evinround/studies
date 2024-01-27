@@ -1,0 +1,40 @@
+:root {
+    --teal: rgb(27, 45, 56);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background: var(--teal);
+    margin: 0;
+    width: 100%;
+    color: white;
+}
+
+header > div{
+    width: 70%;
+    max-width: 600px;
+    padding: 50px 30px;
+    font-size: 14px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header > div > * {
+    padding-bottom: 20px;
+}
+
+#submitBtn {
+    color: var(--teal);
+    font-weight: bold;
+    background-color: rgb(23, 160, 178);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 32px;
+}
